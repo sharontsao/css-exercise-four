@@ -1,4 +1,62 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+}
+
+.container {
+  margin: 3% auto;
+  padding-top: 3%;
   background-color: #dadada;
-  font-size: 10px;
+  width: 50%;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.preview, img {
+  width: 100%;
+  top: 10%
+  display:block;
+}
+
+h3 {
+  position:relative;
+  letter-spacing: 0px;
+  top: 30px;
+  transform: translate( 10%, 10% );
+  width: 100%;
+}
+div {
+  font-family: serif;
+  text-transform: none;
+  margin: 1% 0;
+  width: 100%;
+  padding-top: 10%;
+  text-align: left;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px) {
+  div {
+    margin: 0%;
+    width: 90%;
+  }
+}
+
+.preview, img {
+  width: 100%;
+}
+
+h1, h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.8em;
 }
