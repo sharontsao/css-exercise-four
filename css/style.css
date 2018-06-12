@@ -2,61 +2,67 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ffffff;
+  background-color: #dadada;
   font-size: 16px;
   font-family: system-ui, sans-serif;
 }
 
 .container {
-  margin: 3% auto;
-  padding-top: 3%;
-  background-color: #dadada;
-  width: 50%;
   font-size: 0.8em;
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
+  max-width: 1440px;
 }
-.preview, img {
+.container h1{
+  padding: 5%;
+}
+.preview {
+  min-height: 250px;
   width: 100%;
-  top: 10%
-  display:block;
-}
-
-h3 {
-  position:relative;
-  letter-spacing: 0px;
-  top: 30px;
-  transform: translate( 10%, 10% );
-  width: 100%;
-}
-div {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: serif;
   text-transform: none;
-  margin: 1% 0;
-  width: 100%;
-  padding-top: 10%;
+  padding-top: 3%;
+  padding-left: 3%;
   text-align: left;
+  margin-bottom: 5%;
+}
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+.london {
+  background-image: url(../images/london.png);
+}
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+.preview h1 {
+  padding: 1% 1%;
+  font-size: 1.4em;
+  letter-spacing: 0px;
+  width: 100%;
 }
 
 /* code added to create two-column design */
 @media screen and (min-width: 575px) {
-  div {
-    margin: 0%;
-    width: 90%;
+  .preview {
+    margin: 1%;
+    width: 48%;
+    float:left;
   }
 }
 
-.preview, img {
-  width: 100%;
-}
-
-h1, h3 {
-  font-size: 2em;
-  margin: 0;
-}
-
-h3 {
-  font-size: 1.8em;
+@media screen and (min-width: 991px) {
+  .preview {
+    width: 23%;
+  }
 }
